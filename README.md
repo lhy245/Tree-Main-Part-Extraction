@@ -8,7 +8,7 @@ We also provide a simple sample dataset. This sample dataset is from: "Wielgosz,
 
 <img width="327" height="369" alt="example" src="https://github.com/user-attachments/assets/0dea1c37-24f3-4e6b-a678-99a75a979935" />
 
-1.	Branch and Leaf Point Filtering Part:
+1.	Branch and Leaf Point Filtering Part: branch_leaf_remove .py
 •	Function: Filters branches, leaves, understory vegetation, and ground points from the forest point cloud to extract the main stem (tree trunk).
 •	Input:
 o	Input file path: Point cloud in LAS format. Forest plot (normalization is recommended beforehand). E.g., G:/computer/study/singtree/code_web/data/example.las
@@ -16,7 +16,7 @@ o	Input file path: Point cloud in LAS format. Forest plot (normalization is reco
 o	output file path: Point cloud in LAS format. This is the trunk point cloud after filtering out branches, leaves, understory vegetation, and ground points. E.g., G:/computer/study/singtree/code_web/data/gan.las
 <img width="326" height="371" alt="gan" src="https://github.com/user-attachments/assets/704559da-1ba1-4047-9c74-627847fced04" />
 
-2.	 Individual Tree Segmentation Part: 
+2.	 Individual Tree Segmentation Part: Individual_tree_extraction.py
 •	 Function:  Segments the filtered trunk point cloud to generate individual tree trunk point clouds.
 •	 Input: 
 o	Input file path: Point cloud in LAS format. This is the main stem point cloud output from Step 1. E.g., G:/computer/study/singtree/code_web/data/gan.las
@@ -24,7 +24,7 @@ o	Input file path: Point cloud in LAS format. This is the main stem point cloud 
 o	output file path: Point cloud in LAS format. This is the individual tree point cloud after segmenting the main stem part. E.g., G:/computer/study/singtree/code_web/data/single.las
 <img width="311" height="350" alt="single" src="https://github.com/user-attachments/assets/af422f85-596c-4187-a47f-94c3d7765411" />
 
-3.	 Trunk Repair and Top Point Cloud Reconstruction: 
+3.	 Trunk Repair and Top Point Cloud Reconstruction: Restoration.py
 •	 Function:  Repairs the individual tree trunk point cloud and reconstructs the top crown point cloud.
 •	 Input: 
 o	Input file path1: Point cloud in LAS format. This is the individual tree trunk point cloud output from Step 2. E.g., G:/computer/study/singtree/code_web/data/single.las
