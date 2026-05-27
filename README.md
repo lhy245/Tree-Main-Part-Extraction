@@ -1,4 +1,3 @@
-⭐ If this repository is helpful for your research, please consider starring it to support our work.
 This project contains the code and data for the paper "Houyu Liang, Xiang Zhou et al.,A structural and growth-constrained framework for individual-tree 
 parameter extraction in complex forest environments". The main function of this code is to perform individual tree extraction from MLS forest point clouds.
 
